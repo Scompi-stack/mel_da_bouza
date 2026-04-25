@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mel da Bouza — Miel artesanal de producción primaria en Galicia. 100% pura, sin pasteurizar, directa de nuestras colmenas a tu mesa." />
+  <title>Mel da Bouza · Miel Artesanal de Galicia</title>
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVEGACIÓN
+  ====================================================== -->
+  <header class="nav-header" id="nav-header">
+    <div class="nav-inner">
+
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-main">Mel da Bouza</span>
+        <span class="nav-logo-sub">Galicia · Producción Primaria</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="productos.html">Nuestra Miel</a>
+        <a href="productos.html#cosmetica">Cosmética</a>
+        <a href="productos.html#packs">Packs Regalo</a>
+        <a href="nosotros.html">La Bouza</a>
+        <a href="contacto.html" class="nav-cta">Contacto</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- ======================================================
+       HERO
+  ====================================================== -->
+  <section class="hero">
+
+    <!-- Hexágonos decorativos de fondo -->
+    <div class="hero-hexagons" aria-hidden="true">
+      <svg class="hex-svg" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="80,40 110,40 125,65 110,90 80,90 65,65"   fill="none" stroke="#C9A84C" stroke-width="0.6" opacity="0.25"/>
+        <polygon points="820,80 850,80 865,105 850,130 820,130 805,105" fill="none" stroke="#C9A84C" stroke-width="0.6" opacity="0.15"/>
+        <polygon points="50,580 80,580 95,605 80,630 50,630 35,605"  fill="none" stroke="#C9A84C" stroke-width="0.6" opacity="0.2"/>
+        <polygon points="840,540 870,540 885,565 870,590 840,590 825,565" fill="none" stroke="#C9A84C" stroke-width="0.6" opacity="0.2"/>
+        <polygon points="450,20 480,20 495,45 480,70 450,70 435,45"  fill="none" stroke="#C9A84C" stroke-width="0.4" opacity="0.12"/>
+        <polygon points="200,650 230,650 245,675 230,700 200,700 185,675" fill="none" stroke="#C9A84C" stroke-width="0.4" opacity="0.12"/>
+        <polygon points="700,620 730,620 745,645 730,670 700,670 685,645" fill="none" stroke="#C9A84C" stroke-width="0.4" opacity="0.12"/>
+      </svg>
+    </div>
+
+    <div class="hero-inner">
+
+      <!-- Columna texto -->
+      <div class="hero-text">
+        <p class="eyebrow reveal">Galicia · Artesanal · Sin procesar</p>
+        <h1 class="hero-headline reveal delay-1">
+          La miel que sabe<br>
+          a lo que <em>siempre fue.</em>
+        </h1>
+        <p class="hero-subhead reveal delay-2">
+          Desde nuestras colmenas en la Bouza hasta tu mesa.<br>
+          Sin mezclas. Sin procesar. Sin atajos.
+        </p>
+        <div class="hero-actions reveal delay-3">
+          <a href="productos.html" class="btn btn-primary">Ver la colección →</a>
+          <a href="nosotros.html" class="btn btn-ghost">Nuestra historia</a>
+        </div>
+      </div>
+
+      <!-- Columna ilustración -->
+      <div class="hero-visual reveal delay-2" aria-hidden="true">
+        <div class="jar-wrap">
+          <svg viewBox="0 0 280 380" xmlns="http://www.w3.org/2000/svg" class="jar-svg">
+            <defs>
+              <radialGradient id="glowGrad" cx="50%" cy="35%" r="65%">
+                <stop offset="0%"   stop-color="#D4860F" stop-opacity="0.45"/>
+                <stop offset="100%" stop-color="#0D0D0D" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="jarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%"   stop-color="#BA7517"/>
+                <stop offset="40%"  stop-color="#D4860F"/>
+                <stop offset="100%" stop-color="#9A6010"/>
+              </linearGradient>
+              <linearGradient id="honeyDepth" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%"   stop-color="#D4860F" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#7A4A05" stop-opacity="0.9"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Glow ambiental -->
+            <ellipse cx="140" cy="200" rx="110" ry="130" fill="url(#glowGrad)"/>
+
+            <!-- Cuerpo del tarro -->
+            <rect x="70" y="130" width="140" height="190" rx="10" fill="url(#jarGrad)" opacity="0.9"/>
+
+            <!-- Profundidad de la miel -->
+            <rect x="72" y="210" width="136" height="108" rx="0" fill="url(#honeyDepth)"/>
+
+            <!-- Reflejo lateral izquierdo -->
+            <rect x="70" y="130" width="18" height="190" rx="10" fill="white" opacity="0.06"/>
+
+            <!-- Etiqueta -->
+            <rect x="84" y="152" width="112" height="128" rx="3" fill="#0D0D0D" opacity="0.88"/>
+            <rect x="84" y="152" width="112" height="128" rx="3" fill="none" stroke="#C9A84C" stroke-width="0.8"/>
+
+            <!-- Círculo logo en etiqueta -->
+            <circle cx="140" cy="196" r="28" fill="none" stroke="#C9A84C" stroke-width="0.8"/>
+            <circle cx="140" cy="196" r="23" fill="none" stroke="#C9A84C" stroke-width="0.3" opacity="0.4"/>
+
+            <text x="140" y="191" font-size="7.5" fill="#C9A84C" text-anchor="middle" font-family="'Cormorant Garamond', serif" letter-spacing="1.5">MEL DA</text>
+            <text x="140" y="203" font-size="7.5" fill="#C9A84C" text-anchor="middle" font-family="'Cormorant Garamond', serif" letter-spacing="1.5">BOUZA</text>
+
+            <!-- Línea separadora -->
+            <line x1="96" y1="238" x2="184" y2="238" stroke="#C9A84C" stroke-width="0.4" opacity="0.5"/>
+
+            <text x="140" y="252" font-size="6.5" fill="#A89878" text-anchor="middle" font-family="'DM Sans', sans-serif" letter-spacing="3">GALICIA</text>
+            <text x="140" y="265" font-size="6"   fill="#6B6558" text-anchor="middle" font-family="'DM Sans', sans-serif" letter-spacing="2.5">100% PURA</text>
+            <text x="140" y="272" font-size="6"   fill="#6B6558" text-anchor="middle" font-family="'DM Sans', sans-serif" letter-spacing="2.5">SIN PASTEURIZAR</text>
+
+            <text x="140" y="287" font-size="8" fill="#E8C97A" text-anchor="middle" font-family="'Cormorant Garamond', serif" letter-spacing="1" font-style="italic">500 g</text>
+
+            <!-- Tapa -->
+            <rect x="78" y="112" width="124" height="22" rx="4" fill="#141210"/>
+            <rect x="78" y="112" width="124" height="22" rx="4" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.6"/>
+            <line x1="80" y1="123" x2="200" y2="123" stroke="#C9A84C" stroke-width="0.3" opacity="0.3"/>
+
+            <!-- Gota de miel -->
+            <path d="M 148 130 Q 152 142 148 158 Q 144 142 148 130" fill="#E8C97A" opacity="0.7"/>
+            <ellipse cx="148" cy="159" rx="4" ry="2" fill="#E8C97A" opacity="0.5"/>
+          </svg>
+
+          <!-- Sombra bajo el tarro -->
+          <div class="jar-shadow"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Flecha scroll -->
+    <a href="#garantia" class="scroll-hint" aria-label="Scroll">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10 4 L10 16 M4 10 L10 16 L16 10" stroke="#C9A84C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+
+  </section>
+
+
+  <!-- ======================================================
+       FRANJA DE GARANTÍA
+  ====================================================== -->
+  <div class="strip" id="garantia">
+    <div class="strip-inner">
+      <span>100% Pura</span>
+      <span class="strip-dot"></span>
+      <span>Producción Primaria</span>
+      <span class="strip-dot"></span>
+      <span>Sin Pasteurizar</span>
+      <span class="strip-dot"></span>
+      <span>Galicia</span>
+      <span class="strip-dot"></span>
+      <span>Envío 48–72h</span>
+    </div>
+  </div>
+
+
+  <!-- ======================================================
+       PRODUCTOS DESTACADOS
+  ====================================================== -->
+  <section class="section section-dark" id="productos">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="eyebrow">Temporada actual</p>
+        <h2 class="section-title">Nuestras mieles</h2>
+        <p class="section-lead">Cada variedad es el retrato de un paisaje. Pruébalas y elige la tuya.</p>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- Producto 1 -->
+        <article class="product-card reveal">
+          <div class="product-img-wrap">
+            <!-- Sustituir por: <img src="img/productos/eucalipto.jpg" alt="Miel de Eucalipto"> -->
+            <div class="product-img-placeholder">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="80">
+                <ellipse cx="100" cy="115" rx="55" ry="70" fill="#D4860F" opacity="0.7"/>
+                <rect x="60" y="55" width="80" height="18" rx="3" fill="#141210" stroke="#C9A84C" stroke-width="0.5"/>
+                <text x="100" y="105" font-size="9" fill="#FAF7F2" text-anchor="middle" font-family="serif" letter-spacing="1">EUCALIPTO</text>
+              </svg>
+            </div>
+            <div class="product-tag">Ámbar oscuro · Balsámica</div>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Miel de Eucalipto</h3>
+            <p class="product-desc">Notas mentoladas y balsámicas. Ideal para infusiones y para acompañar quesos curados gallegos.</p>
+            <div class="product-footer">
+              <span class="product-price">12,90 €<span class="product-unit"> / 500g</span></span>
+              <a href="productos.html" class="btn-link">Ver producto →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 2 — destacado -->
+        <article class="product-card product-card--featured reveal delay-1">
+          <div class="product-badge">Estrella de temporada</div>
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="80">
+                <ellipse cx="100" cy="115" rx="55" ry="70" fill="#BA7517" opacity="0.85"/>
+                <rect x="60" y="55" width="80" height="18" rx="3" fill="#141210" stroke="#C9A84C" stroke-width="0.8"/>
+                <text x="100" y="100" font-size="8" fill="#FAF7F2" text-anchor="middle" font-family="serif" letter-spacing="1">MULTIFLORAL</text>
+                <text x="100" y="113" font-size="8" fill="#E8C97A" text-anchor="middle" font-family="serif" letter-spacing="1">BOUZA</text>
+              </svg>
+            </div>
+            <div class="product-tag">Compleja · Herbácea</div>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Multifloral da Bouza</h3>
+            <p class="product-desc">El carácter de nuestra finca en un solo tarro. Dulce, compleja y con fondo herbáceo. La esencia de la Bouza.</p>
+            <div class="product-footer">
+              <span class="product-price">14,50 €<span class="product-unit"> / 500g</span></span>
+              <a href="productos.html" class="btn-link">Ver producto →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="product-card reveal delay-2">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="80">
+                <ellipse cx="100" cy="115" rx="55" ry="70" fill="#885010" opacity="0.75"/>
+                <rect x="60" y="55" width="80" height="18" rx="3" fill="#141210" stroke="#C9A84C" stroke-width="0.5"/>
+                <text x="100" y="105" font-size="9" fill="#FAF7F2" text-anchor="middle" font-family="serif" letter-spacing="1">CASTAÑO</text>
+              </svg>
+            </div>
+            <div class="product-tag">Oscura · Intensa · Mineral</div>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Miel de Castaño</h3>
+            <p class="product-desc">Ligeramente amarga y potente. La preferida de quienes ya saben lo que es una miel de verdad.</p>
+            <div class="product-footer">
+              <span class="product-price">15,90 €<span class="product-unit"> / 500g</span></span>
+              <a href="productos.html" class="btn-link">Ver producto →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="section-cta">
+        <a href="productos.html" class="btn btn-primary">Ver toda la colección →</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PUNTOS DE VALOR
+  ====================================================== -->
+  <section class="section section-cream" id="valores">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="eyebrow eyebrow-dark">Por qué Mel da Bouza</p>
+        <h2 class="section-title section-title-dark">No es como la del supermercado</h2>
+      </div>
+
+      <div class="values-grid">
+
+        <div class="value-item reveal">
+          <div class="value-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="20,4 24,16 36,16 26,24 30,36 20,28 10,36 14,24 4,16 16,16" stroke="#C9A84C" stroke-width="1" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="value-title">Producción primaria</h3>
+          <p class="value-text">Somos apicultores, no distribuidores. Lo que envasamos sale de nuestras colmenas en Galicia, no de mezclas de otras procedencias. Sabemos de qué flor viene cada gota.</p>
+        </div>
+
+        <div class="value-item reveal delay-1">
+          <div class="value-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 8 C12 8 6 14 6 22 C6 30 12 36 20 36 C28 36 34 30 34 22" stroke="#C9A84C" stroke-width="1" stroke-linecap="round"/>
+              <path d="M27 8 L34 8 L34 15" stroke="#C9A84C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M34 8 L22 20" stroke="#C9A84C" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="value-title">Miel viva, no pasteurizada</h3>
+          <p class="value-text">Sin calentar ni filtrar en exceso. Todos sus enzimas, polen y propiedades naturales intactas. La miel de supermercado se procesa para durar más. La nuestra dura porque es buena de verdad.</p>
+        </div>
+
+        <div class="value-item reveal delay-2">
+          <div class="value-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="13" stroke="#C9A84C" stroke-width="1"/>
+              <path d="M20 12 L20 20 L26 26" stroke="#C9A84C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="20" cy="20" r="2" fill="#C9A84C"/>
+            </svg>
+          </div>
+          <h3 class="value-title">Pequeña producción</h3>
+          <p class="value-text">Hacemos pocos tarros cada temporada. Cuando se acaba, se acabó hasta la próxima cosecha. Comprar a Mel da Bouza es reservar algo antes de que desaparezca.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       COSMÉTICA — TEASER
+  ====================================================== -->
+  <section class="section section-dark" id="cosmetica">
+    <div class="container">
+      <div class="cosmetica-split">
+
+        <div class="cosmetica-text reveal">
+          <p class="eyebrow">Más allá de la miel</p>
+          <h2 class="section-title">Cosmética natural<br>de la Bouza</h2>
+          <p class="cosmetica-lead">Los mismos ingredientes que ponemos en la mesa, los ponemos en tu piel. Jabones artesanales, cremas y bálsamos elaborados con miel propia, cera de abeja y plantas del monte gallego.</p>
+          <ul class="cosmetica-list">
+            <li>Sin parabenos ni sulfatos</li>
+            <li>Ingredientes de origen natural</li>
+            <li>Elaboración artesanal en pequeños lotes</li>
+          </ul>
+          <a href="productos.html#cosmetica" class="btn btn-outline">Ver cosmética →</a>
+        </div>
+
+        <div class="cosmetica-visual reveal delay-1" aria-hidden="true">
+          <!-- Placeholder: reemplazar con <img src="img/productos/cosmetica.jpg" alt="Jabones artesanales Mel da Bouza"> -->
+          <div class="cosmetica-placeholder">
+            <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="220">
+              <!-- Jabón 1 -->
+              <rect x="40" y="120" width="90" height="110" rx="8" fill="#2A1F08" stroke="#C9A84C" stroke-width="0.6"/>
+              <rect x="52" y="135" width="66" height="82" rx="3" fill="#1A1610"/>
+              <text x="85" y="175" font-size="7" fill="#C9A84C" text-anchor="middle" font-family="serif" letter-spacing="1">JABÓN DE</text>
+              <text x="85" y="186" font-size="7" fill="#C9A84C" text-anchor="middle" font-family="serif" letter-spacing="1">MIEL Y AVENA</text>
+              <text x="85" y="200" font-size="6" fill="#6B6558" text-anchor="middle" font-family="sans-serif" letter-spacing="2">100g</text>
+              <!-- Jabón 2 (inclinado/detrás) -->
+              <rect x="155" y="100" width="90" height="110" rx="8" fill="#1E1610" stroke="#C9A84C40" stroke-width="0.5"/>
+              <rect x="167" y="115" width="66" height="82" rx="3" fill="#141210"/>
+              <text x="200" y="154" font-size="7" fill="#A89878" text-anchor="middle" font-family="serif" letter-spacing="1">CREMA DE</text>
+              <text x="200" y="165" font-size="7" fill="#A89878" text-anchor="middle" font-family="serif" letter-spacing="1">CERA Y ROMERO</text>
+              <text x="200" y="179" font-size="6" fill="#6B6558" text-anchor="middle" font-family="sans-serif" letter-spacing="2">50ml</text>
+              <!-- Toque decorativo: flores/hierbas -->
+              <ellipse cx="130" cy="108" rx="6" ry="10" fill="#3A2E0A" opacity="0.7"/>
+              <ellipse cx="122" cy="100" rx="5" ry="9"  fill="#3A2E0A" opacity="0.5"/>
+              <ellipse cx="138" cy="102" rx="4" ry="8"  fill="#3A2E0A" opacity="0.4"/>
+              <!-- Etiqueta dorada suelo -->
+              <ellipse cx="140" cy="240" rx="90" ry="12" fill="#C9A84C" opacity="0.06"/>
+            </svg>
+            <p class="cosmetica-placeholder-label">Jabones · Cremas · Bálsamos</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PACKS DE REGALO — TEASER
+  ====================================================== -->
+  <section class="section section-gift">
+    <div class="container">
+      <div class="gift-inner reveal">
+
+        <div class="gift-label">
+          <svg viewBox="0 0 24 24" fill="none" width="20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 12v10H4V12M22 7H2v5h20V7zM12 22V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" stroke="#0D0D0D" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Packs de regalo
+        </div>
+
+        <h2 class="gift-title">Un regalo que dice<br>que te importa de verdad.</h2>
+
+        <p class="gift-text">Tres niveles para cada ocasión. Desde un tarro seleccionado con tarjeta manuscrita hasta la colección completa con cosmética. Todo con packaging negro y dorado listo para regalar.</p>
+
+        <div class="gift-tiers">
+          <div class="gift-tier">
+            <span class="gift-tier-name">Esencial</span>
+            <span class="gift-tier-price">desde 18 €</span>
+          </div>
+          <div class="gift-tier gift-tier--mid">
+            <span class="gift-tier-name">Artesano</span>
+            <span class="gift-tier-price">desde 35 €</span>
+          </div>
+          <div class="gift-tier">
+            <span class="gift-tier-name">Colección Bouza</span>
+            <span class="gift-tier-price">desde 65 €</span>
+          </div>
+        </div>
+
+        <a href="productos.html#packs" class="btn btn-dark">Ver packs de regalo →</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       DAVID — HUMANIZACIÓN
+  ====================================================== -->
+  <section class="section section-dark" id="david">
+    <div class="container">
+      <div class="david-split">
+
+        <div class="david-avatar-wrap reveal">
+          <div class="david-avatar">
+            <!-- Placeholder: reemplazar con <img src="img/branding/david.jpg" alt="David, apicultor de Mel da Bouza"> -->
+            <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" width="120">
+              <circle cx="80" cy="80" r="78" fill="#1A1610" stroke="#C9A84C" stroke-width="0.6"/>
+              <circle cx="80" cy="62" r="22" fill="#2A1F08" stroke="#C9A84C40" stroke-width="0.5"/>
+              <path d="M28 138 C28 100 132 100 132 138" fill="#2A1F08" stroke="#C9A84C40" stroke-width="0.5"/>
+            </svg>
+          </div>
+          <div class="david-name-plate">
+            <span class="david-name">David</span>
+            <span class="david-role">Apicultor · Galicia</span>
+          </div>
+        </div>
+
+        <div class="david-text reveal delay-1">
+          <p class="eyebrow">Detrás de cada tarro, hay una persona</p>
+          <blockquote class="david-quote">
+            "Hago miel porque me apasiona.<br>La vendo porque merece llegar lejos."
+          </blockquote>
+          <p class="david-body">David lleva las colmenas de la Bouza con la misma filosofía desde el principio: si no lo harías para tu familia, no lo hagas para nadie. Por eso cada lote es pequeño, cada cosecha es distinta y cada cliente que escribe recibe respuesta directa.</p>
+          <p class="david-body">Si tienes alguna pregunta sobre el origen de la miel, quieres un pedido personalizado o simplemente tienes curiosidad sobre cómo es una temporada de apicultura en Galicia, escríbenos.</p>
+          <div class="david-contact">
+            <a href="mailto:hola@meldabouza.com" class="david-contact-link">
+              <svg viewBox="0 0 20 20" fill="none" width="16" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="16" height="12" rx="2" stroke="#C9A84C" stroke-width="1"/>
+                <path d="M2 7 L10 12 L18 7" stroke="#C9A84C" stroke-width="1" stroke-linecap="round"/>
+              </svg>
+              hola@meldabouza.com
+            </a>
+            <a href="https://instagram.com/meldabouza" target="_blank" rel="noopener" class="david-contact-link">
+              <svg viewBox="0 0 20 20" fill="none" width="16" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="16" height="16" rx="4" stroke="#C9A84C" stroke-width="1"/>
+                <circle cx="10" cy="10" r="4" stroke="#C9A84C" stroke-width="1"/>
+                <circle cx="15" cy="5" r="1" fill="#C9A84C"/>
+              </svg>
+              @meldabouza
+            </a>
+          </div>
+          <a href="contacto.html" class="btn btn-outline">Escríbenos →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       INSTAGRAM FEED — PLACEHOLDER
+  ====================================================== -->
+  <section class="section section-dark insta-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Síguenos</p>
+        <h2 class="section-title">
+          <a href="https://instagram.com/meldabouza" target="_blank" rel="noopener" class="insta-handle">@meldabouza</a>
+        </h2>
+      </div>
+
+      <!-- Placeholder grid: reemplazar cada item con tu feed real o widget de Instagram -->
+      <div class="insta-grid">
+        <div class="insta-item reveal"><div class="insta-placeholder"></div></div>
+        <div class="insta-item reveal delay-1"><div class="insta-placeholder"></div></div>
+        <div class="insta-item reveal delay-2"><div class="insta-placeholder"></div></div>
+        <div class="insta-item reveal delay-1"><div class="insta-placeholder"></div></div>
+        <div class="insta-item reveal delay-2"><div class="insta-placeholder"></div></div>
+        <div class="insta-item reveal delay-3"><div class="insta-placeholder"></div></div>
+      </div>
+      <p class="insta-note">Sustituir por widget de feed de Instagram (p.ej. Elfsight o EmbedSocial)</p>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <p class="footer-logo">Mel da Bouza</p>
+        <p class="footer-tagline">Miel artesanal de producción primaria.<br>Galicia, España.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/meldabouza" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 20 20" fill="none" width="18" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="16" height="16" rx="4" stroke="#C9A84C" stroke-width="1"/>
+              <circle cx="10" cy="10" r="4" stroke="#C9A84C" stroke-width="1"/>
+              <circle cx="15" cy="5" r="1" fill="#C9A84C"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-nav">
+        <p class="footer-nav-title">Tienda</p>
+        <a href="productos.html">Nuestra Miel</a>
+        <a href="productos.html#cosmetica">Cosmética Natural</a>
+        <a href="productos.html#packs">Packs de Regalo</a>
+      </nav>
+
+      <nav class="footer-nav">
+        <p class="footer-nav-title">Nosotros</p>
+        <a href="nosotros.html">La Bouza</a>
+        <a href="nosotros.html#apicultura">Nuestra apicultura</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="footer-info">
+        <p class="footer-nav-title">Contacto</p>
+        <a href="mailto:hola@meldabouza.com">hola@meldabouza.com</a>
+        <p class="footer-legal-text">Envíos a toda España peninsular.<br>Canarias, Baleares y Portugal: consultar.</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Mel da Bouza · Todos los derechos reservados</p>
+      <p>Hecho con cuidado en Galicia</p>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
